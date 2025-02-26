@@ -271,6 +271,34 @@ details[open] {
     margin-top: 20px;
 }
 
+#development-notes {
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: left;
+    padding: 20px;
+}
+
+#development-notes h2 {
+    text-align: left;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+#development-notes article {
+    margin-bottom: 20px;
+}
+
+#development-notes h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#development-notes p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .about-section {

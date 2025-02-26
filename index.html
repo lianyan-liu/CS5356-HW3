@@ -198,6 +198,32 @@
         </section>
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+        <section id="development-notes">
+            <h2>Learnings</h2>
+            
+            <article>
+                <h3>Use a HTML Element: details</h3>
+                <p>During the development of my personal website, 
+                I explored the details element to enhance the user experience by allowing visitors to expand and collapse additional project details. 
+                This element provides a built-in disclosure mechanism without requiring JavaScript. 
+                The summary tag inside details serves as a clickable heading, making it easy for users to access or hide content.
+                I found that details is an excellent choice for structuring secondary information, 
+                such as project descriptions, without cluttering the interface. 
+                It also improves accessibility, as screen readers can recognize and announce whether the section is expanded or collapsed.</p>
+            </article>
+            
+            <article>
+                <h3>Use a CSS Property: gap</h3>
+                <p>To refine the layout of different sections, especially the social links, skill tags, and project cards, 
+                I used the gap property instead of adding margin spacing between elements. 
+                This property simplifies layout spacing within Flexbox and Grid containers without affecting individual margins. 
+                Using gap in.social-links, .tags, and .projects-grid allowed me to create consistent and adjustable spacing while keeping the CSS clean. 
+                Compared to manually setting margins on elements, gap provides a more flexible and readable approach, 
+                making it easier to adjust spacing without modifying multiple elements.</p>
+            </article>
+        </section>
+        
         
     </body>
 </html>
