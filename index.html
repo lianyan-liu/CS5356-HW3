@@ -2,16 +2,202 @@
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
-        <title> My Homepage </title>
-        <meta name="viewport" content="width=device-width" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta property="og:title" content="Lianyan Liu's Portfolio">
+        <meta property="og:description" content="Lianyan Liu is a user experience researcher and product designer with multidisciplinary background in design and information technology.">
+        <meta property="og:image" content="https://lianyan-liu.github.io/CS5356-HW3/assets/preview.png">
+        <meta property="og:url" content="https://lianyan-liu.github.io/CS5356-HW3/">
+        <meta property="og:type" content="website">
+        <link rel="icon" href="https://lianyan-liu.github.io/CS5356-HW3/assets/favicon.ico" type="image/x-icon">
+        <title>Lianyan Liu - ll2226</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
     </head>
+    
     <body>
-        <h1>Welcome to My Personal Homepage</h1>
-        <p>This is my first HTML page hosted on GitHub Pages.</p>
-        <input type="checkbox" checked />
-        <img src="kittens.webp" alt="Playing kittens"/>
+    
+        <!-- Navigation Bar -->
+        <header>
+            <nav class="navbar">
+                <div class="nav-left">
+                    <a href="index.html">
+                        <img src="./assets/logo.png" alt="Logo" class="logo">
+                    </a>
+                </div>
 
-        <a id="first-link" href="#syllabus">Syllabus</a>
-        <button data-example="value">Click</button>
+                <div class="nav-right">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#projects">Selected Works</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Profile -->
+        <section id="about" class="about-section">
+            <div class="profile">
+                <img src="./assets/avatar.png" alt="avatar" class="avatar-image">
+                <p class="subtitle">Connective Media @ Cornell Tech</p>
+                <p class="pronouns">She/Her/Hers</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/lianyan-liu/" target="_blank" class="social-link" data-platform="linkedin">
+                        <img src="./assets/linkedin-default.png" class="default" alt="LinkedIn">
+                        <img src="./assets/linkedin-hover.png" class="hover" alt="LinkedIn">
+                    </a>
+                
+                    <a href="https://orcid.org/0009-0006-9088-1076" target="_blank" class="social-link" data-platform="orcid">
+                        <img src="./assets/orcid-default.png" class="default" alt="ORCid">
+                        <img src="./assets/orcid-hover.png" class="hover" alt="ORCid">
+                    </a>
+                
+                    <a href="mailto:liu_lianyan@outlook.com" class="social-link" data-platform="email">
+                        <img src="./assets/email-default.png" class="default" alt="Email">
+                        <img src="./assets/email-hover.png" class="hover" alt="Email">
+                    </a>
+                
+                    <a href="./assets/CV.pdf" target="_blank" class="social-link" data-platform="cv">
+                        <img src="./assets/cv-default.png" class="default" alt="CV">
+                        <img src="./assets/cv-hover.png" class="hover" alt="CV">
+                    </a>
+                </div>
+                
+            </div>
+            <div class="about-me">
+                <h1>Lianyan Liu / 刘潋滟</h1>
+                <p>Lianyan Liu is a user experience researcher and product designer with an interdisciplinary background in design and information technology. 
+                    She believes in the symbiotic relationship between humans and machines, striving to design interfaces that foster seamless collaboration, 
+                    understanding, and shared progress. Currently, she is a master's student at Cornell Tech in New York, actively seeking UX Designer and 
+                    Product Designer internship opportunities. Feel free to reach out!</p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section">   
+            <h2>Education</h2>
+
+            <div class="education-item">
+                <div class="degree">Master's</div>
+                <div class="edu-logo"><img src="./assets/Cornell-logo.png" alt="Cornell Tech"></div>
+                <div class="edu-info">
+                    <strong>Cornell University (Cornell Tech)</strong><br>
+                    <span class="edu-subtitle">M.S. in Applied Information Science & Information Systems - Connective Media</span>
+                </div>
+                <div class="edu-time">Sept. 2024 - Present</div>
+            </div>
+        
+            <div class="education-item">
+                <div class="degree">Bachelor's</div>
+                <div class="edu-logo"><img src="./assets/ZJU-logo.webp" alt="Zhejiang University"></div>
+                <div class="edu-info">
+                    <strong>Zhejiang University</strong><br>
+                    <span class="edu-subtitle">B. Eng. in Industrial Design</span>
+                </div>
+                <div class="edu-time">Sept. 2020 - Jun. 2024</div>
+            </div>
+            </section>
+        </section>
+
+        <!-- Project Section -->
+        <section id="projects">
+            <div class="projects-grid">
+        
+                <!-- MOgic -->
+                <figure class="project-card">
+                    <a href="https://sites.google.com/cornell.edu/lianyan-liu/work/mogic" target="_blank" class="project-img-link"><img src="assets/MOgic.png" alt="Preview"></a>
+                    <figcaption>
+                        <h3>MOgic</h3>
+                        <p class="subtitle">Bringing Tactile Interaction to Museum Artifacts</p>
+        
+                        <div class="tags">
+                            <span class="tag">#Rhino 3D</span>
+                            <span class="tag">#Blender</span>
+                            <span class="tag">#3D Printing</span>
+                            <span class="tag">#Arduino</span>
+                        </div>
+
+                        <details>
+                            <summary>More details</summary>
+                            <p><strong>Client:</strong> Academic course project</p>
+                            <p><strong>Timeline:</strong>Feb. 2023 - Jun. 2023</p>
+                            <p><strong>Role:</strong> Team leader & hardware engineer</p>
+                            <p><strong>Description:</strong> MOgic is a force-feedback haptic glove designed to enhance museum experiences 
+                                by allowing visitors to "feel" artifacts that are otherwise locked behind glass. 
+                                By integrating Leap Motion for precise hand tracking, Unity for virtual object simulation, 
+                                and a retractable force-feedback mechanism, MOgic synchronizes digital interactions with real-world tactile sensations. 
+                                The glove translates virtual object contours into physical resistance, 
+                                creating an immersive bridge between the virtual and physical realms. </p>
+                        </details>
+                    </figcaption>
+                </figure>
+        
+                <!-- HOHO -->
+                <figure class="project-card">
+                    <a href="https://sites.google.com/cornell.edu/lianyan-liu/work/hoho-ux-upgrade" target="_blank" class="project-img-link"><img src="assets/HOHO.png" alt="Preview"></a>
+                    <figcaption>
+                        <h3>Hoho UX Upgrade</h3>
+                        <p class="subtitle">User Experience Design for a Digital Planner Online Shop</p>
+        
+                        <div class="tags">
+                            <span class="tag">#Data-driven Design</span>
+                            <span class="tag">#Figma</span> 
+                            <span class="tag">#User Research</span>
+                        </div>
+        
+                        <details>
+                            <summary>More details</summary>
+                            <p><strong>Client:</strong> Hoho Design Studio</p>
+                            <p><strong>Timeline:</strong> Sept. 2022 - Jan. 2023</p>
+                            <p><strong>Role:</strong> UX Designer</p>
+                            <p><strong>Description:</strong> Hoho is an independent digital planner design studio that operates a Taobao store, 
+                                an online shopping platform in China. Due to platform restrictions on virtual products and an inefficient delivery 
+                                method via Baidu Netdisk, the store faced challenges in traffic, conversion rates, and digital piracy risks. 
+                                This work focused on redesigning the Taobao store pages to improve user engagement and conversion rates while 
+                                developing a WeChat Mini Program to enhance product delivery efficiency and security. 
+                                </p>
+                        </details>
+                    </figcaption>
+                </figure>
+        
+                <!-- Fun Dialect-->
+                <figure class="project-card">
+                    <a href="https://sites.google.com/cornell.edu/lianyan-liu/work/fun-dialect" target="_blank" class="project-img-link"><img src="assets/Funyan.png" alt="Preview"></a>
+                    <figcaption>
+                        <h3>Fun Dialect</h3>
+                        <p class="subtitle">Dialect learning mobile application design</p>
+        
+                        <div class="tags">
+                            <span class="tag">#Figma</span>
+                            <span class="tag">#Swift</span>
+                            <span class="tag">#Midjourney</span>
+                        </div>
+        
+                        <details>
+                            <summary>More details</summary>
+                            <p><strong>Client:</strong> Academic course project</p>
+                            <p><strong>Timeline:</strong> <time datetime="2023-02">Feb. 2023</time> - <time datetime="2023-06">Jun. 2022</time></p>
+                            <p><strong>Role:</strong> Interaction Designer</p>
+                            <p><strong>Description:</strong> Fun Dialect is a mobile application aimed at revitalizing interest in dialects among young users. 
+                                By integrating dialect phrases with internet slang and meme culture, 
+                                the app transforms dialect learning into an engaging and interactive experience. 
+                                With a multimodal interaction approach including audio recognition, contextual phrase connections, 
+                                and gamified learning, Fun Dialect fosters a fun and immersive way to explore regional languages and their cultural significance. 
+                                This project won the second prize in the 8th China Collegiate Computing Contest—Mobile Application Innovation Contest.
+                            </p>
+                        </details>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        
+        <section id="travel-map">
+            <h2>Miscellaneous</h2>
+            <p>I love traveling! Here are some of the places I've visited:</p>
+            <div id="map"></div>
+        </section>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        
     </body>
 </html>
